@@ -48,7 +48,7 @@ class TestPackageIndex(unittest.TestCase):
 
         old_urlopen = urllib2.urlopen
         urllib2.urlopen = _urlopen
-        url = 'http://example.com'
+        url = 'https://example.com'
         try:
             try:
                 v = index.open_url(url)
@@ -68,7 +68,7 @@ class TestPackageIndex(unittest.TestCase):
         )
 
         # issue 20
-        url = 'http://http://svn.pythonpaste.org/Paste/wphp/trunk'
+        url = 'https://http://svn.pythonpaste.org/Paste/wphp/trunk'
         try:
             index.open_url(url)
         except distutils.errors.DistutilsError, error:
@@ -85,7 +85,7 @@ class TestPackageIndex(unittest.TestCase):
         # issue #160
         if sys.version_info[0] == 2 and sys.version_info[1] == 7:
             # this should not fail
-            url = 'http://example.com'
+            url = 'https://example.com'
             page = ('<a href="http://www.famfamfam.com]('
                     'http://www.famfamfam.com/">')
             index.process_index(url, page)
@@ -101,7 +101,7 @@ class TestPackageIndex(unittest.TestCase):
         """
         Download links from the pypi simple index should be used before
         external download links.
-        http://bitbucket.org/tarek/distribute/issue/163/md5-validation-error
+        https://bitbucket.org/tarek/distribute/issue/163/md5-validation-error
 
         Usecase :
         - someone uploads a package on pypi, a md5 is generated

@@ -90,7 +90,7 @@ class TestEasyInstallTest(unittest.TestCase):
         # in the current working directory
         dir = tempfile.mkdtemp()
         setup_cfg = open(os.path.join(dir, 'setup.cfg'), 'w')
-        setup_cfg.write('[easy_install]\nfind_links = http://example.com')
+        setup_cfg.write('[easy_install]\nfind_links = https://example.com')
         setup_cfg.close()
         setup_py = open(os.path.join(dir, 'setup.py'), 'w')
         setup_py.write(SETUP_PY)

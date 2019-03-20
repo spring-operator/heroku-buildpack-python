@@ -7,7 +7,7 @@ A tool for doing automatic download/extract/build of distutils-based Python
 packages.  For detailed documentation, see the accompanying EasyInstall.txt
 file, or visit the `EasyInstall home page`__.
 
-__ http://packages.python.org/distribute/easy_install.html
+__ https://packages.python.org/distribute/easy_install.html
 
 """
 import sys
@@ -281,7 +281,7 @@ class easy_install(Command):
                 else:
                     self.all_site_dirs.append(normalize_path(d))
         if not self.editable: self.check_site_dir()
-        self.index_url = self.index_url or "http://pypi.python.org/simple"
+        self.index_url = self.index_url or "https://pypi.python.org/simple"
         self.shadow_path = self.all_site_dirs[:]
         for path_item in self.install_dir, normalize_path(self.script_dir):
             if path_item not in self.shadow_path:
@@ -465,7 +465,7 @@ variable.
 For information on other options, you may wish to consult the
 documentation at:
 
-  http://packages.python.org/distribute/easy_install.html
+  https://packages.python.org/distribute/easy_install.html
 
 Please make the appropriate changes for your system and try again.
 """
@@ -1253,7 +1253,7 @@ Here are some of your options for correcting the problem:
 * You can set up the installation directory to support ".pth" files by
   using one of the approaches described here:
 
-  http://packages.python.org/distribute/easy_install.html#custom-installation-locations
+  https://packages.python.org/distribute/easy_install.html#custom-installation-locations
 
 Please make the appropriate changes for your system and try again.""" % (
         self.install_dir, os.environ.get('PYTHONPATH','')
@@ -1803,7 +1803,7 @@ def fix_jython_executable(executable, options):
             # Can't apply the workaround, leave it broken
             log.warn("WARNING: Unable to adapt shebang line for Jython,"
                              " the following script is NOT executable\n"
-                     "         see http://bugs.jython.org/issue1112 for"
+                     "         see https://bugs.jython.org/issue1112 for"
                              " more information.")
         else:
             return '/usr/bin/env %s' % executable

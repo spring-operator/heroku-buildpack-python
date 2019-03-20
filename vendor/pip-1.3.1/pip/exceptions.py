@@ -49,7 +49,7 @@ class NoSSLError(PipError):
             ##                                                               ##
             ##  For more details, go to the  "SSL Certificate Verification"  ##
             ##  section located here:                                        ##
-            ##     http://www.pip-installer.org/en/latest/logic.html         ##
+            ##     https://pip.pypa.io/en/latest/logic.html         ##
             ##                                                               ##
             ###################################################################
             """)

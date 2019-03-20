@@ -133,7 +133,7 @@ except ImportError:
     ssl = None
 
 
-# patch for py25 socket to work with http://pypi.python.org/pypi/ssl/
+# patch for py25 socket to work with https://pypi.python.org/pypi/ssl/
 import socket
 if not hasattr(socket, 'create_connection'): # for Python 2.5
     # monkey-patch socket module

@@ -2,7 +2,7 @@ Metadata-Version: 1.1
 Name: distribute
 Version: 0.6.36
 Summary: Easily download, build, install, upgrade, and uninstall Python packages
-Home-page: http://packages.python.org/distribute
+Home-page: https://packages.python.org/distribute
 Author: The fellowship of the packaging
 Author-email: distutils-sig@python.org
 License: PSF or ZPL
@@ -37,14 +37,14 @@ Description: ===============================
           the same as for Python 2 code, but Distribute also helps you to support
           Python 2 and Python 3 from the same source code by letting you run 2to3
           on the code as a part of the build process, by setting the keyword parameter
-          ``use_2to3`` to True. See http://packages.python.org/distribute for more
+          ``use_2to3`` to True. See https://packages.python.org/distribute for more
           information.
         
         - Refactoring the code, and releasing it in several distributions.
           This work is being done in the 0.7.x series but not yet released.
         
         The roadmap is still evolving, and the page that is up-to-date is
-        located at : `http://packages.python.org/distribute/roadmap`.
+        located at : `https://packages.python.org/distribute/roadmap`.
         
         If you install `Distribute` and want to switch back for any reason to
         `Setuptools`, get to the `Uninstallation instructions`_ section.
@@ -53,7 +53,7 @@ Description: ===============================
         ==================
         
         You can get more information in the Sphinx-based documentation, located
-        at http://packages.python.org/distribute. This documentation includes the old
+        at https://packages.python.org/distribute. This documentation includes the old
         Setuptools documentation that is slowly replaced, and brand new content.
         
         About the installation process
@@ -85,12 +85,12 @@ Description: ===============================
         ===================
         
         Download
-        `distribute_setup.py <http://python-distribute.org/distribute_setup.py>`_
+        `distribute_setup.py <https://python-distribute.org/distribute_setup.py>`_
         and execute it, using the Python interpreter of your choice.
         
         If your shell has the ``curl`` program you can do::
         
-            $ curl -O http://python-distribute.org/distribute_setup.py
+            $ curl -O https://python-distribute.org/distribute_setup.py
             $ python distribute_setup.py
         
         Notice this file is also provided in the source release.
@@ -107,7 +107,7 @@ Description: ===============================
         
         Download the source tarball, uncompress it, then run the install command::
         
-            $ curl -O http://pypi.python.org/packages/source/d/distribute/distribute-0.6.36.tar.gz
+            $ curl -O https://pypi.python.org/packages/source/d/distribute/distribute-0.6.36.tar.gz
             $ tar -xzvf distribute-0.6.36.tar.gz
             $ cd distribute-0.6.36
             $ python setup.py install
@@ -211,7 +211,7 @@ Description: ===============================
           $ python bootstrap.py --distribute
         
           For previous zc.buildout versions, *the only thing* you need to do
-          is use the bootstrap at `http://python-distribute.org/bootstrap.py`.  Run
+          is use the bootstrap at `https://python-distribute.org/bootstrap.py`.  Run
           that bootstrap and ``bin/buildout`` (and all other buildout-generated
           scripts) will transparently use distribute instead of setuptools.  You do
           not need a specific buildout release.
@@ -222,7 +222,7 @@ Description: ===============================
           ``distribute`` somewhere in your eggs: using the bootstrap is enough.
         
           The source code for the bootstrap script is located at
-          `http://bitbucket.org/tarek/buildout-distribute`.
+          `https://bitbucket.org/tarek/buildout-distribute`.
         
         
         
@@ -230,9 +230,9 @@ Description: ===============================
         Feedback and getting involved
         -----------------------------
         
-        - Mailing list: http://mail.python.org/mailman/listinfo/distutils-sig
-        - Issue tracker: http://bitbucket.org/tarek/distribute/issues/
-        - Code Repository: http://bitbucket.org/tarek/distribute
+        - Mailing list: https://mail.python.org/mailman/listinfo/distutils-sig
+        - Issue tracker: https://bitbucket.org/tarek/distribute/issues/
+        - Code Repository: https://bitbucket.org/tarek/distribute
         
         =======
         CHANGES
@@ -295,8 +295,8 @@ Description: ===============================
         * `Issue #303`_: Make sure the manifest only ever contains UTF-8 in Python 3.
         * `Issue #329`_: Properly close files created by tests for compatibility with
           Jython.
-        * Work around Jython bugs `#1980 <http://bugs.jython.org/issue1980>`_ and
-          `#1981 <http://bugs.jython.org/issue1981>`_.
+        * Work around Jython bugs `#1980 <https://bugs.jython.org/issue1980>`_ and
+          `#1981 <https://bugs.jython.org/issue1981>`_.
         * `Issue #334`_: Provide workaround for packages that reference `sys.__stdout__`
           such as numpy does. This change should address
           `virtualenv #359 <https://github.com/pypa/virtualenv/issues/359>`_ as long
@@ -572,7 +572,7 @@ Description: ===============================
         * Added the 'DONT_PATCH_SETUPTOOLS' environment variable, so virtualenv
           can drive an installation that doesn't patch a global setuptools.
         * Reviewed unladen-swallow specific change from
-          http://code.google.com/p/unladen-swallow/source/detail?spec=svn875&r=719
+          https://code.google.com/p/unladen-swallow/source/detail?spec=svn875&r=719
           and determined that it no longer applies. Distribute should work fine with
           Unladen Swallow 2009Q3.
         * `Issue 21`_: Allow PackageIndex.open_url to gracefully handle all cases of a
@@ -621,7 +621,7 @@ Description: ===============================
           This closes `issue #52`_.
         
         * Added an upload_docs command to easily upload project documentation to
-          PyPI's http://packages.python.org. This close `issue #56`_.
+          PyPI's https://packages.python.org. This close `issue #56`_.
         
         * Fixed a bootstrap bug on the use_setuptools() API.
         
@@ -647,19 +647,19 @@ Description: ===============================
         ==========
         
         * Added Python 3 support; see docs/python3.txt.
-          This closes http://bugs.python.org/setuptools/issue39.
+          This closes https://bugs.python.org/setuptools/issue39.
         
         * Added option to run 2to3 automatically when installing on Python 3.
           This closes `issue #31`_.
         
         * Fixed invalid usage of requirement.parse, that broke develop -d.
-          This closes http://bugs.python.org/setuptools/issue44.
+          This closes https://bugs.python.org/setuptools/issue44.
         
         * Fixed script launcher for 64-bit Windows.
-          This closes http://bugs.python.org/setuptools/issue2.
+          This closes https://bugs.python.org/setuptools/issue2.
         
         * KeyError when compiling extensions.
-          This closes http://bugs.python.org/setuptools/issue41.
+          This closes https://bugs.python.org/setuptools/issue41.
         
         bootstrapping
         =============
@@ -669,7 +669,7 @@ Description: ===============================
         * Fixed 2.6 dependencies. This closes `issue #50`_.
         
         * Make sure setuptools is patched when running through easy_install
-          This closes http://bugs.python.org/setuptools/issue40.
+          This closes https://bugs.python.org/setuptools/issue40.
         
         -----
         0.6.1
@@ -682,9 +682,9 @@ Description: ===============================
           This closes `issue #16`_ and `issue #18`_.
         
         * zip_ok is now False by default. This closes
-          http://bugs.python.org/setuptools/issue33.
+          https://bugs.python.org/setuptools/issue33.
         
-        * Fixed invalid URL error catching. http://bugs.python.org/setuptools/issue20.
+        * Fixed invalid URL error catching. https://bugs.python.org/setuptools/issue20.
         
         * Fixed invalid bootstraping with easy_install installation (`issue #40`_).
           Thanks to Florian Schulze for the help.
@@ -744,122 +744,122 @@ Description: ===============================
         * Immediately close all file handles. This closes `issue #3`_.
         
         
-        .. _`Issue #135`: http://bitbucket.org/tarek/distribute/issue/135
-        .. _`Issue #183`: http://bitbucket.org/tarek/distribute/issue/183
-        .. _`Issue #207`: http://bitbucket.org/tarek/distribute/issue/207
-        .. _`Issue #208`: http://bitbucket.org/tarek/distribute/issue/208
-        .. _`Issue #212`: http://bitbucket.org/tarek/distribute/issue/212
-        .. _`Issue #213`: http://bitbucket.org/tarek/distribute/issue/213
-        .. _`Issue #218`: http://bitbucket.org/tarek/distribute/issue/218
-        .. _`Issue #225`: http://bitbucket.org/tarek/distribute/issue/225
-        .. _`Issue #227`: http://bitbucket.org/tarek/distribute/issue/227
-        .. _`Issue #231`: http://bitbucket.org/tarek/distribute/issue/231
-        .. _`Issue #237`: http://bitbucket.org/tarek/distribute/issue/237
-        .. _`Issue #238`: http://bitbucket.org/tarek/distribute/issue/238
-        .. _`Issue #239`: http://bitbucket.org/tarek/distribute/issue/239
-        .. _`Issue #240`: http://bitbucket.org/tarek/distribute/issue/240
-        .. _`Issue #241`: http://bitbucket.org/tarek/distribute/issue/241
-        .. _`Issue #243`: http://bitbucket.org/tarek/distribute/issue/243
-        .. _`Issue #244`: http://bitbucket.org/tarek/distribute/issue/244
-        .. _`Issue #249`: http://bitbucket.org/tarek/distribute/issue/249
-        .. _`Issue #258`: http://bitbucket.org/tarek/distribute/issue/258
-        .. _`Issue #260`: http://bitbucket.org/tarek/distribute/issue/260
-        .. _`Issue #262`: http://bitbucket.org/tarek/distribute/issue/262
-        .. _`Issue #269`: http://bitbucket.org/tarek/distribute/issue/269
-        .. _`Issue #272`: http://bitbucket.org/tarek/distribute/issue/272
-        .. _`Issue #273`: http://bitbucket.org/tarek/distribute/issue/273
-        .. _`Issue #278`: http://bitbucket.org/tarek/distribute/issue/278
-        .. _`Issue #283`: http://bitbucket.org/tarek/distribute/issue/283
-        .. _`Issue #294`: http://bitbucket.org/tarek/distribute/issue/294
-        .. _`Issue #299`: http://bitbucket.org/tarek/distribute/issue/299
-        .. _`Issue #301`: http://bitbucket.org/tarek/distribute/issue/301
-        .. _`Issue #303`: http://bitbucket.org/tarek/distribute/issue/303
-        .. _`Issue #304`: http://bitbucket.org/tarek/distribute/issue/304
-        .. _`Issue #305`: http://bitbucket.org/tarek/distribute/issue/305
-        .. _`Issue #306`: http://bitbucket.org/tarek/distribute/issue/306
-        .. _`Issue #307`: http://bitbucket.org/tarek/distribute/issue/307
-        .. _`Issue #310`: http://bitbucket.org/tarek/distribute/issue/310
-        .. _`Issue #311`: http://bitbucket.org/tarek/distribute/issue/311
-        .. _`Issue #313`: http://bitbucket.org/tarek/distribute/issue/313
-        .. _`Issue #314`: http://bitbucket.org/tarek/distribute/issue/314
-        .. _`Issue #320`: http://bitbucket.org/tarek/distribute/issue/320
-        .. _`Issue #323`: http://bitbucket.org/tarek/distribute/issue/323
-        .. _`Issue #326`: http://bitbucket.org/tarek/distribute/issue/326
-        .. _`Issue #327`: http://bitbucket.org/tarek/distribute/issue/327
-        .. _`Issue #328`: http://bitbucket.org/tarek/distribute/issue/328
-        .. _`Issue #329`: http://bitbucket.org/tarek/distribute/issue/329
-        .. _`Issue #334`: http://bitbucket.org/tarek/distribute/issue/334
-        .. _`Issue #335`: http://bitbucket.org/tarek/distribute/issue/335
-        .. _`Issue #336`: http://bitbucket.org/tarek/distribute/issue/336
-        .. _`Issue #341`: http://bitbucket.org/tarek/distribute/issue/341
-        .. _`Issue 100`: http://bitbucket.org/tarek/distribute/issue/100
-        .. _`Issue 101`: http://bitbucket.org/tarek/distribute/issue/101
-        .. _`Issue 103`: http://bitbucket.org/tarek/distribute/issue/103
-        .. _`Issue 104`: http://bitbucket.org/tarek/distribute/issue/104
-        .. _`Issue 108`: http://bitbucket.org/tarek/distribute/issue/108
-        .. _`Issue 11`: http://bitbucket.org/tarek/distribute/issue/11
-        .. _`Issue 112`: http://bitbucket.org/tarek/distribute/issue/112
-        .. _`Issue 121`: http://bitbucket.org/tarek/distribute/issue/121
-        .. _`Issue 133`: http://bitbucket.org/tarek/distribute/issue/133
-        .. _`Issue 134`: http://bitbucket.org/tarek/distribute/issue/134
-        .. _`Issue 138`: http://bitbucket.org/tarek/distribute/issue/138
-        .. _`Issue 143`: http://bitbucket.org/tarek/distribute/issue/143
-        .. _`Issue 146`: http://bitbucket.org/tarek/distribute/issue/146
-        .. _`Issue 147`: http://bitbucket.org/tarek/distribute/issue/147
-        .. _`Issue 149`: http://bitbucket.org/tarek/distribute/issue/149
-        .. _`Issue 15`: http://bitbucket.org/tarek/distribute/issue/15
-        .. _`Issue 150`: http://bitbucket.org/tarek/distribute/issue/150
-        .. _`Issue 160`: http://bitbucket.org/tarek/distribute/issue/160
-        .. _`Issue 163`: http://bitbucket.org/tarek/distribute/issue/163
-        .. _`Issue 170`: http://bitbucket.org/tarek/distribute/issue/170
-        .. _`Issue 171`: http://bitbucket.org/tarek/distribute/issue/171
-        .. _`Issue 174`: http://bitbucket.org/tarek/distribute/issue/174
-        .. _`Issue 192`: http://bitbucket.org/tarek/distribute/issue/192
-        .. _`Issue 193`: http://bitbucket.org/tarek/distribute/issue/193
-        .. _`Issue 195`: http://bitbucket.org/tarek/distribute/issue/195
-        .. _`Issue 196`: http://bitbucket.org/tarek/distribute/issue/196
-        .. _`Issue 200`: http://bitbucket.org/tarek/distribute/issue/200
-        .. _`Issue 204`: http://bitbucket.org/tarek/distribute/issue/204
-        .. _`Issue 205`: http://bitbucket.org/tarek/distribute/issue/205
-        .. _`Issue 206`: http://bitbucket.org/tarek/distribute/issue/206
-        .. _`Issue 21`: http://bitbucket.org/tarek/distribute/issue/21
-        .. _`Issue 210`: http://bitbucket.org/tarek/distribute/issue/210
-        .. _`Issue 58`: http://bitbucket.org/tarek/distribute/issue/58
-        .. _`Issue 64`: http://bitbucket.org/tarek/distribute/issue/64
-        .. _`Issue 65`: http://bitbucket.org/tarek/distribute/issue/65
-        .. _`Issue 67`: http://bitbucket.org/tarek/distribute/issue/67
-        .. _`Issue 70`: http://bitbucket.org/tarek/distribute/issue/70
-        .. _`Issue 72`: http://bitbucket.org/tarek/distribute/issue/72
-        .. _`Issue 74`: http://bitbucket.org/tarek/distribute/issue/74
-        .. _`Issue 80`: http://bitbucket.org/tarek/distribute/issue/80
-        .. _`Issue 86`: http://bitbucket.org/tarek/distribute/issue/86
-        .. _`Issue 87`: http://bitbucket.org/tarek/distribute/issue/87
-        .. _`Issue 89`: http://bitbucket.org/tarek/distribute/issue/89
-        .. _`Issue 90`: http://bitbucket.org/tarek/distribute/issue/90
-        .. _`Issue 92`: http://bitbucket.org/tarek/distribute/issue/92
-        .. _`Issue 93`: http://bitbucket.org/tarek/distribute/issue/93
-        .. _`Issue 99`: http://bitbucket.org/tarek/distribute/issue/99
+        .. _`Issue #135`: https://bitbucket.org/tarek/distribute/issue/135
+        .. _`Issue #183`: https://bitbucket.org/tarek/distribute/issue/183
+        .. _`Issue #207`: https://bitbucket.org/tarek/distribute/issue/207
+        .. _`Issue #208`: https://bitbucket.org/tarek/distribute/issue/208
+        .. _`Issue #212`: https://bitbucket.org/tarek/distribute/issue/212
+        .. _`Issue #213`: https://bitbucket.org/tarek/distribute/issue/213
+        .. _`Issue #218`: https://bitbucket.org/tarek/distribute/issue/218
+        .. _`Issue #225`: https://bitbucket.org/tarek/distribute/issue/225
+        .. _`Issue #227`: https://bitbucket.org/tarek/distribute/issue/227
+        .. _`Issue #231`: https://bitbucket.org/tarek/distribute/issue/231
+        .. _`Issue #237`: https://bitbucket.org/tarek/distribute/issue/237
+        .. _`Issue #238`: https://bitbucket.org/tarek/distribute/issue/238
+        .. _`Issue #239`: https://bitbucket.org/tarek/distribute/issue/239
+        .. _`Issue #240`: https://bitbucket.org/tarek/distribute/issue/240
+        .. _`Issue #241`: https://bitbucket.org/tarek/distribute/issue/241
+        .. _`Issue #243`: https://bitbucket.org/tarek/distribute/issue/243
+        .. _`Issue #244`: https://bitbucket.org/tarek/distribute/issue/244
+        .. _`Issue #249`: https://bitbucket.org/tarek/distribute/issue/249
+        .. _`Issue #258`: https://bitbucket.org/tarek/distribute/issue/258
+        .. _`Issue #260`: https://bitbucket.org/tarek/distribute/issue/260
+        .. _`Issue #262`: https://bitbucket.org/tarek/distribute/issue/262
+        .. _`Issue #269`: https://bitbucket.org/tarek/distribute/issue/269
+        .. _`Issue #272`: https://bitbucket.org/tarek/distribute/issue/272
+        .. _`Issue #273`: https://bitbucket.org/tarek/distribute/issue/273
+        .. _`Issue #278`: https://bitbucket.org/tarek/distribute/issue/278
+        .. _`Issue #283`: https://bitbucket.org/tarek/distribute/issue/283
+        .. _`Issue #294`: https://bitbucket.org/tarek/distribute/issue/294
+        .. _`Issue #299`: https://bitbucket.org/tarek/distribute/issue/299
+        .. _`Issue #301`: https://bitbucket.org/tarek/distribute/issue/301
+        .. _`Issue #303`: https://bitbucket.org/tarek/distribute/issue/303
+        .. _`Issue #304`: https://bitbucket.org/tarek/distribute/issue/304
+        .. _`Issue #305`: https://bitbucket.org/tarek/distribute/issue/305
+        .. _`Issue #306`: https://bitbucket.org/tarek/distribute/issue/306
+        .. _`Issue #307`: https://bitbucket.org/tarek/distribute/issue/307
+        .. _`Issue #310`: https://bitbucket.org/tarek/distribute/issue/310
+        .. _`Issue #311`: https://bitbucket.org/tarek/distribute/issue/311
+        .. _`Issue #313`: https://bitbucket.org/tarek/distribute/issue/313
+        .. _`Issue #314`: https://bitbucket.org/tarek/distribute/issue/314
+        .. _`Issue #320`: https://bitbucket.org/tarek/distribute/issue/320
+        .. _`Issue #323`: https://bitbucket.org/tarek/distribute/issue/323
+        .. _`Issue #326`: https://bitbucket.org/tarek/distribute/issue/326
+        .. _`Issue #327`: https://bitbucket.org/tarek/distribute/issue/327
+        .. _`Issue #328`: https://bitbucket.org/tarek/distribute/issue/328
+        .. _`Issue #329`: https://bitbucket.org/tarek/distribute/issue/329
+        .. _`Issue #334`: https://bitbucket.org/tarek/distribute/issue/334
+        .. _`Issue #335`: https://bitbucket.org/tarek/distribute/issue/335
+        .. _`Issue #336`: https://bitbucket.org/tarek/distribute/issue/336
+        .. _`Issue #341`: https://bitbucket.org/tarek/distribute/issue/341
+        .. _`Issue 100`: https://bitbucket.org/tarek/distribute/issue/100
+        .. _`Issue 101`: https://bitbucket.org/tarek/distribute/issue/101
+        .. _`Issue 103`: https://bitbucket.org/tarek/distribute/issue/103
+        .. _`Issue 104`: https://bitbucket.org/tarek/distribute/issue/104
+        .. _`Issue 108`: https://bitbucket.org/tarek/distribute/issue/108
+        .. _`Issue 11`: https://bitbucket.org/tarek/distribute/issue/11
+        .. _`Issue 112`: https://bitbucket.org/tarek/distribute/issue/112
+        .. _`Issue 121`: https://bitbucket.org/tarek/distribute/issue/121
+        .. _`Issue 133`: https://bitbucket.org/tarek/distribute/issue/133
+        .. _`Issue 134`: https://bitbucket.org/tarek/distribute/issue/134
+        .. _`Issue 138`: https://bitbucket.org/tarek/distribute/issue/138
+        .. _`Issue 143`: https://bitbucket.org/tarek/distribute/issue/143
+        .. _`Issue 146`: https://bitbucket.org/tarek/distribute/issue/146
+        .. _`Issue 147`: https://bitbucket.org/tarek/distribute/issue/147
+        .. _`Issue 149`: https://bitbucket.org/tarek/distribute/issue/149
+        .. _`Issue 15`: https://bitbucket.org/tarek/distribute/issue/15
+        .. _`Issue 150`: https://bitbucket.org/tarek/distribute/issue/150
+        .. _`Issue 160`: https://bitbucket.org/tarek/distribute/issue/160
+        .. _`Issue 163`: https://bitbucket.org/tarek/distribute/issue/163
+        .. _`Issue 170`: https://bitbucket.org/tarek/distribute/issue/170
+        .. _`Issue 171`: https://bitbucket.org/tarek/distribute/issue/171
+        .. _`Issue 174`: https://bitbucket.org/tarek/distribute/issue/174
+        .. _`Issue 192`: https://bitbucket.org/tarek/distribute/issue/192
+        .. _`Issue 193`: https://bitbucket.org/tarek/distribute/issue/193
+        .. _`Issue 195`: https://bitbucket.org/tarek/distribute/issue/195
+        .. _`Issue 196`: https://bitbucket.org/tarek/distribute/issue/196
+        .. _`Issue 200`: https://bitbucket.org/tarek/distribute/issue/200
+        .. _`Issue 204`: https://bitbucket.org/tarek/distribute/issue/204
+        .. _`Issue 205`: https://bitbucket.org/tarek/distribute/issue/205
+        .. _`Issue 206`: https://bitbucket.org/tarek/distribute/issue/206
+        .. _`Issue 21`: https://bitbucket.org/tarek/distribute/issue/21
+        .. _`Issue 210`: https://bitbucket.org/tarek/distribute/issue/210
+        .. _`Issue 58`: https://bitbucket.org/tarek/distribute/issue/58
+        .. _`Issue 64`: https://bitbucket.org/tarek/distribute/issue/64
+        .. _`Issue 65`: https://bitbucket.org/tarek/distribute/issue/65
+        .. _`Issue 67`: https://bitbucket.org/tarek/distribute/issue/67
+        .. _`Issue 70`: https://bitbucket.org/tarek/distribute/issue/70
+        .. _`Issue 72`: https://bitbucket.org/tarek/distribute/issue/72
+        .. _`Issue 74`: https://bitbucket.org/tarek/distribute/issue/74
+        .. _`Issue 80`: https://bitbucket.org/tarek/distribute/issue/80
+        .. _`Issue 86`: https://bitbucket.org/tarek/distribute/issue/86
+        .. _`Issue 87`: https://bitbucket.org/tarek/distribute/issue/87
+        .. _`Issue 89`: https://bitbucket.org/tarek/distribute/issue/89
+        .. _`Issue 90`: https://bitbucket.org/tarek/distribute/issue/90
+        .. _`Issue 92`: https://bitbucket.org/tarek/distribute/issue/92
+        .. _`Issue 93`: https://bitbucket.org/tarek/distribute/issue/93
+        .. _`Issue 99`: https://bitbucket.org/tarek/distribute/issue/99
         .. _`issue
-          449`: http://bitbucket.org/tarek/distribute/issue/449
-        .. _`issue #1`: http://bitbucket.org/tarek/distribute/issue/1
-        .. _`issue #10`: http://bitbucket.org/tarek/distribute/issue/10
-        .. _`issue #12`: http://bitbucket.org/tarek/distribute/issue/12
-        .. _`issue #13`: http://bitbucket.org/tarek/distribute/issue/13
-        .. _`issue #16`: http://bitbucket.org/tarek/distribute/issue/16
-        .. _`issue #18`: http://bitbucket.org/tarek/distribute/issue/18
-        .. _`issue #3`: http://bitbucket.org/tarek/distribute/issue/3
-        .. _`issue #31`: http://bitbucket.org/tarek/distribute/issue/31
-        .. _`issue #40`: http://bitbucket.org/tarek/distribute/issue/40
-        .. _`issue #49`: http://bitbucket.org/tarek/distribute/issue/49
-        .. _`issue #5`: http://bitbucket.org/tarek/distribute/issue/5
-        .. _`issue #50`: http://bitbucket.org/tarek/distribute/issue/50
-        .. _`issue #52`: http://bitbucket.org/tarek/distribute/issue/52
-        .. _`issue #56`: http://bitbucket.org/tarek/distribute/issue/56
-        .. _`issue #6`: http://bitbucket.org/tarek/distribute/issue/6
-        .. _`issue #7`: http://bitbucket.org/tarek/distribute/issue/7
-        .. _`issue #8`: http://bitbucket.org/tarek/distribute/issue/8
-        .. _`issue #9`: http://bitbucket.org/tarek/distribute/issue/9
-        .. _`issue 64`: http://bitbucket.org/tarek/distribute/issue/64
+          449`: https://bitbucket.org/tarek/distribute/issue/449
+        .. _`issue #1`: https://bitbucket.org/tarek/distribute/issue/1
+        .. _`issue #10`: https://bitbucket.org/tarek/distribute/issue/10
+        .. _`issue #12`: https://bitbucket.org/tarek/distribute/issue/12
+        .. _`issue #13`: https://bitbucket.org/tarek/distribute/issue/13
+        .. _`issue #16`: https://bitbucket.org/tarek/distribute/issue/16
+        .. _`issue #18`: https://bitbucket.org/tarek/distribute/issue/18
+        .. _`issue #3`: https://bitbucket.org/tarek/distribute/issue/3
+        .. _`issue #31`: https://bitbucket.org/tarek/distribute/issue/31
+        .. _`issue #40`: https://bitbucket.org/tarek/distribute/issue/40
+        .. _`issue #49`: https://bitbucket.org/tarek/distribute/issue/49
+        .. _`issue #5`: https://bitbucket.org/tarek/distribute/issue/5
+        .. _`issue #50`: https://bitbucket.org/tarek/distribute/issue/50
+        .. _`issue #52`: https://bitbucket.org/tarek/distribute/issue/52
+        .. _`issue #56`: https://bitbucket.org/tarek/distribute/issue/56
+        .. _`issue #6`: https://bitbucket.org/tarek/distribute/issue/6
+        .. _`issue #7`: https://bitbucket.org/tarek/distribute/issue/7
+        .. _`issue #8`: https://bitbucket.org/tarek/distribute/issue/8
+        .. _`issue #9`: https://bitbucket.org/tarek/distribute/issue/9
+        .. _`issue 64`: https://bitbucket.org/tarek/distribute/issue/64
         
         
 Keywords: CPAN PyPI distutils eggs package management

@@ -14,7 +14,7 @@ if is_jython:
     import subprocess
 
 print 'Downloading bootstrap'
-file = urllib2.urlopen('http://nightly.ziade.org/distribute_setup.py')
+file = urllib2.urlopen('https://nightly.ziade.org/distribute_setup.py')
 f = open('distribute_setup.py', 'w')
 f.write(file.read())
 f.close()

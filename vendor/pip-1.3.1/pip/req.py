@@ -421,7 +421,7 @@ exec(compile(open(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))
 
         pip_egg_info_path = os.path.join(dist.location,
                                          dist.egg_name()) + '.egg-info'
-        # workaround for http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=618367
+        # workaround for https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=618367
         debian_egg_info_path = pip_egg_info_path.replace(
             '-py%s' % pkg_resources.PY_MAJOR, '')
         easy_install_egg = dist.egg_name() + '.egg'
@@ -1358,7 +1358,7 @@ def parse_requirements(filename, finder=None, comes_from=None, options=None):
 
 
 def parse_editable(editable_req, default_vcs=None):
-    """Parses svn+http://blahblah@rev#egg=Foobar into a requirement
+    """Parses svn+https://blahblah@rev#egg=Foobar into a requirement
     (Foobar) and a URL"""
 
     url = editable_req

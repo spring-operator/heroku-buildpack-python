@@ -120,7 +120,7 @@ class VersionControl(object):
         error_message = (
            "Sorry, '%s' is a malformed VCS url. "
            "The format is <vcs>+<protocol>://<url>, "
-           "e.g. svn+http://myrepo/svn/MyApp#egg=MyApp")
+           "e.g. svn+https://myrepo/svn/MyApp#egg=MyApp")
         assert '+' in self.url, error_message % self.url
         url = self.url.split('+', 1)[1]
         scheme, netloc, path, query, frag = urlparse.urlsplit(url)

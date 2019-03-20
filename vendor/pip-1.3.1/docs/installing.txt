@@ -7,7 +7,7 @@ Installation
 
     Prior to version 1.3, pip did not use SSL for downloading packages from PyPI, and thus left
     users more vulnerable to security threats. We advise installing at least version 1.3.
-    If you're using `virtualenv <http://www.virtualenv.org>`_ to install pip, we advise installing
+    If you're using `virtualenv <https://virtualenv.pypa.io>`_ to install pip, we advise installing
     at least version 1.9, which contains pip version 1.3.
 
 
@@ -23,7 +23,7 @@ Using virtualenv
 ----------------
 
 The easiest way to install and use pip is with `virtualenv
-<http://www.virtualenv.org>`_, since every virtualenv has pip (and it's dependencies) installed into it
+<https://virtualenv.pypa.io>`_, since every virtualenv has pip (and it's dependencies) installed into it
 automatically.
 
 This does not require root access or modify your system Python
@@ -35,7 +35,7 @@ installation. For instance::
 
 When used in this manner, pip will only affect the active virtual environment.
 
-See the `virtualenv installation instructions <http://www.virtualenv.org/en/latest/#installation>`_.
+See the `virtualenv installation instructions <https://virtualenv.pypa.io/en/latest/#installation>`_.
 
 Installing Globally
 -------------------
@@ -45,7 +45,7 @@ Often this requires the installation to be performed as root.
 
 .. warning::
 
-    We advise against using `easy_install <http://pythonhosted.org/distribute/easy_install.html>`_ to install pip, because easy_install
+    We advise against using `easy_install <https://pythonhosted.org/distribute/easy_install.html>`_ to install pip, because easy_install
     does not download from PyPI over SSL, so the installation might be insecure.
     Since pip can then be used to install packages (which execute code on
     your computer), it is better to go through a trusted path.

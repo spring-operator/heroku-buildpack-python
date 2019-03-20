@@ -29,14 +29,14 @@ The fork has two goals:
   the same as for Python 2 code, but Distribute also helps you to support
   Python 2 and Python 3 from the same source code by letting you run 2to3
   on the code as a part of the build process, by setting the keyword parameter
-  ``use_2to3`` to True. See http://packages.python.org/distribute for more
+  ``use_2to3`` to True. See https://packages.python.org/distribute for more
   information.
 
 - Refactoring the code, and releasing it in several distributions.
   This work is being done in the 0.7.x series but not yet released.
 
 The roadmap is still evolving, and the page that is up-to-date is
-located at : `http://packages.python.org/distribute/roadmap`.
+located at : `https://packages.python.org/distribute/roadmap`.
 
 If you install `Distribute` and want to switch back for any reason to
 `Setuptools`, get to the `Uninstallation instructions`_ section.
@@ -45,7 +45,7 @@ More documentation
 ==================
 
 You can get more information in the Sphinx-based documentation, located
-at http://packages.python.org/distribute. This documentation includes the old
+at https://packages.python.org/distribute. This documentation includes the old
 Setuptools documentation that is slowly replaced, and brand new content.
 
 About the installation process
@@ -77,12 +77,12 @@ distribute_setup.py
 ===================
 
 Download
-`distribute_setup.py <http://python-distribute.org/distribute_setup.py>`_
+`distribute_setup.py <https://python-distribute.org/distribute_setup.py>`_
 and execute it, using the Python interpreter of your choice.
 
 If your shell has the ``curl`` program you can do::
 
-    $ curl -O http://python-distribute.org/distribute_setup.py
+    $ curl -O https://python-distribute.org/distribute_setup.py
     $ python distribute_setup.py
 
 Notice this file is also provided in the source release.
@@ -99,7 +99,7 @@ Source installation
 
 Download the source tarball, uncompress it, then run the install command::
 
-    $ curl -O http://pypi.python.org/packages/source/d/distribute/distribute-0.6.36.tar.gz
+    $ curl -O https://pypi.python.org/packages/source/d/distribute/distribute-0.6.36.tar.gz
     $ tar -xzvf distribute-0.6.36.tar.gz
     $ cd distribute-0.6.36
     $ python setup.py install
@@ -203,7 +203,7 @@ Install FAQ
   $ python bootstrap.py --distribute
 
   For previous zc.buildout versions, *the only thing* you need to do
-  is use the bootstrap at `http://python-distribute.org/bootstrap.py`.  Run
+  is use the bootstrap at `https://python-distribute.org/bootstrap.py`.  Run
   that bootstrap and ``bin/buildout`` (and all other buildout-generated
   scripts) will transparently use distribute instead of setuptools.  You do
   not need a specific buildout release.
@@ -214,7 +214,7 @@ Install FAQ
   ``distribute`` somewhere in your eggs: using the bootstrap is enough.
 
   The source code for the bootstrap script is located at
-  `http://bitbucket.org/tarek/buildout-distribute`.
+  `https://bitbucket.org/tarek/buildout-distribute`.
 
 
 
@@ -222,7 +222,7 @@ Install FAQ
 Feedback and getting involved
 -----------------------------
 
-- Mailing list: http://mail.python.org/mailman/listinfo/distutils-sig
-- Issue tracker: http://bitbucket.org/tarek/distribute/issues/
-- Code Repository: http://bitbucket.org/tarek/distribute
+- Mailing list: https://mail.python.org/mailman/listinfo/distutils-sig
+- Issue tracker: https://bitbucket.org/tarek/distribute/issues/
+- Code Repository: https://bitbucket.org/tarek/distribute
 

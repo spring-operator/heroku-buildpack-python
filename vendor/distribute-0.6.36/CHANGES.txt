@@ -59,8 +59,8 @@ how it parses version numbers.
 * Issue #303: Make sure the manifest only ever contains UTF-8 in Python 3.
 * Issue #329: Properly close files created by tests for compatibility with
   Jython.
-* Work around Jython bugs `#1980 <http://bugs.jython.org/issue1980>`_ and
-  `#1981 <http://bugs.jython.org/issue1981>`_.
+* Work around Jython bugs `#1980 <https://bugs.jython.org/issue1980>`_ and
+  `#1981 <https://bugs.jython.org/issue1981>`_.
 * Issue #334: Provide workaround for packages that reference `sys.__stdout__`
   such as numpy does. This change should address
   `virtualenv #359 <https://github.com/pypa/virtualenv/issues/359>`_ as long
@@ -336,7 +336,7 @@ how it parses version numbers.
 * Added the 'DONT_PATCH_SETUPTOOLS' environment variable, so virtualenv
   can drive an installation that doesn't patch a global setuptools.
 * Reviewed unladen-swallow specific change from
-  http://code.google.com/p/unladen-swallow/source/detail?spec=svn875&r=719
+  https://code.google.com/p/unladen-swallow/source/detail?spec=svn875&r=719
   and determined that it no longer applies. Distribute should work fine with
   Unladen Swallow 2009Q3.
 * Issue 21: Allow PackageIndex.open_url to gracefully handle all cases of a
@@ -385,7 +385,7 @@ how it parses version numbers.
   This closes issue #52.
 
 * Added an upload_docs command to easily upload project documentation to
-  PyPI's http://packages.python.org. This close issue #56.
+  PyPI's https://packages.python.org. This close issue #56.
 
 * Fixed a bootstrap bug on the use_setuptools() API.
 
@@ -411,19 +411,19 @@ setuptools
 ==========
 
 * Added Python 3 support; see docs/python3.txt.
-  This closes http://bugs.python.org/setuptools/issue39.
+  This closes https://bugs.python.org/setuptools/issue39.
 
 * Added option to run 2to3 automatically when installing on Python 3.
   This closes issue #31.
 
 * Fixed invalid usage of requirement.parse, that broke develop -d.
-  This closes http://bugs.python.org/setuptools/issue44.
+  This closes https://bugs.python.org/setuptools/issue44.
 
 * Fixed script launcher for 64-bit Windows.
-  This closes http://bugs.python.org/setuptools/issue2.
+  This closes https://bugs.python.org/setuptools/issue2.
 
 * KeyError when compiling extensions.
-  This closes http://bugs.python.org/setuptools/issue41.
+  This closes https://bugs.python.org/setuptools/issue41.
 
 bootstrapping
 =============
@@ -433,7 +433,7 @@ bootstrapping
 * Fixed 2.6 dependencies. This closes issue #50.
 
 * Make sure setuptools is patched when running through easy_install
-  This closes http://bugs.python.org/setuptools/issue40.
+  This closes https://bugs.python.org/setuptools/issue40.
 
 -----
 0.6.1
@@ -446,9 +446,9 @@ setuptools
   This closes issue #16 and issue #18.
 
 * zip_ok is now False by default. This closes
-  http://bugs.python.org/setuptools/issue33.
+  https://bugs.python.org/setuptools/issue33.
 
-* Fixed invalid URL error catching. http://bugs.python.org/setuptools/issue20.
+* Fixed invalid URL error catching. https://bugs.python.org/setuptools/issue20.
 
 * Fixed invalid bootstraping with easy_install installation (issue #40).
   Thanks to Florian Schulze for the help.

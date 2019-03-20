@@ -4,13 +4,13 @@
 # [**Python Buildpack**](https://github.com/heroku/heroku-buildpack-python)
 # compiler.
 #
-# A [buildpack](http://devcenter.heroku.com/articles/buildpacks) is an
+# A [buildpack](https://devcenter.heroku.com/articles/buildpacks) is an
 # adapter between a Python application and Heroku's runtime.
 #
 # This script is invoked by [`bin/compile`](/).
 
 # The location of the pre-compiled libmemcached binary.
-VENDORED_MEMCACHED="http://cl.ly/0a191R3K160t1w1P0N25/vendor-libmemcached.tar.gz"
+VENDORED_MEMCACHED="https://cl.ly/0a191R3K160t1w1P0N25/vendor-libmemcached.tar.gz"
 
 # Syntax sugar.
 source $BIN_DIR/utils

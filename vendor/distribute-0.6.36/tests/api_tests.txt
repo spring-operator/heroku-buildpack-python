@@ -17,18 +17,18 @@ Distributions have a location, which can be a filename, URL, or really anything
 else you care to use::
 
     >>> dist = Distribution(
-    ...     location="http://example.com/something",
+    ...     location="https://example.com/something",
     ...     project_name="Bar", version="0.9"
     ... )
 
     >>> dist
-    Bar 0.9 (http://example.com/something)
+    Bar 0.9 (https://example.com/something)
 
 
 Distributions have various introspectable attributes::
 
     >>> dist.location
-    'http://example.com/something'
+    'https://example.com/something'
 
     >>> dist.project_name
     'Bar'
@@ -135,7 +135,7 @@ to it::
     >>> ws = WorkingSet([])
     >>> ws.add(dist)
     >>> ws.entries
-    ['http://example.com/something']
+    ['https://example.com/something']
     >>> dist in ws
     True
     >>> Distribution('foo',version="") in ws
@@ -144,13 +144,13 @@ to it::
 And you can iterate over its distributions::
 
     >>> list(ws)
-    [Bar 0.9 (http://example.com/something)]
+    [Bar 0.9 (https://example.com/something)]
 
 Adding the same distribution more than once is a no-op::
 
     >>> ws.add(dist)
     >>> list(ws)
-    [Bar 0.9 (http://example.com/something)]
+    [Bar 0.9 (https://example.com/something)]
 
 For that matter, adding multiple distributions for the same project also does
 nothing, because a working set can only hold one active distribution per
@@ -158,19 +158,19 @@ project -- the first one added to it::
 
     >>> ws.add(
     ...     Distribution(
-    ...         'http://example.com/something', project_name="Bar",
+    ...         'https://example.com/something', project_name="Bar",
     ...         version="7.2"
     ...     )
     ... )
     >>> list(ws)
-    [Bar 0.9 (http://example.com/something)]
+    [Bar 0.9 (https://example.com/something)]
 
 You can append a path entry to a working set using ``add_entry()``::
 
     >>> ws.entries
-    ['http://example.com/something']
+    ['https://example.com/something']
     >>> ws.add_entry(pkg_resources.__file__)
-    >>> ws.entries == ['http://example.com/something', pkg_resources.__file__]
+    >>> ws.entries == ['https://example.com/something', pkg_resources.__file__]
     True
 
 Multiple additions result in multiple entries, even if the entry is already in
@@ -194,7 +194,7 @@ shows up once when iterating the working set:
 
     >>> ws.add_entry(ws.entries[0])
     >>> list(ws)
-    [Bar 0.9 (http://example.com/something)]
+    [Bar 0.9 (https://example.com/something)]
 
 You can ask a WorkingSet to ``find()`` a distribution matching a requirement::
 
@@ -203,7 +203,7 @@ You can ask a WorkingSet to ``find()`` a distribution matching a requirement::
     None
 
     >>> ws.find(Requirement.parse("Bar==0.9"))  # match, return distribution
-    Bar 0.9 (http://example.com/something)
+    Bar 0.9 (https://example.com/something)
 
 Note that asking for a conflicting version of a distribution already in a
 working set triggers a ``pkg_resources.VersionConflict`` error:

@@ -15,7 +15,7 @@ including just a single `bootstrap module`_ (an 8K .py file), your package will
 automatically download and install ``setuptools`` if the user is building your
 package from source and doesn't have a suitable version already installed.
 
-.. _bootstrap module: http://nightly.ziade.org/distribute_setup.py
+.. _bootstrap module: https://nightly.ziade.org/distribute_setup.py
 
 Feature Highlights:
 
@@ -66,9 +66,9 @@ In addition to the PyPI downloads, the development version of ``setuptools``
 is available from the `Python SVN sandbox`_, and in-development versions of the
 `0.6 branch`_ are available as well.
 
-.. _0.6 branch: http://svn.python.org/projects/sandbox/branches/setuptools-0.6/#egg=setuptools-dev06
+.. _0.6 branch: https://svn.python.org/projects/sandbox/branches/setuptools-0.6/#egg=setuptools-dev06
 
-.. _Python SVN sandbox: http://svn.python.org/projects/sandbox/trunk/setuptools/#egg=setuptools-dev
+.. _Python SVN sandbox: https://svn.python.org/projects/sandbox/trunk/setuptools/#egg=setuptools-dev
 
 .. contents:: **Table of Contents**
 
@@ -149,7 +149,7 @@ dependencies, and perhaps some data files and scripts::
         description = "This is an Example Package",
         license = "PSF",
         keywords = "hello world example examples",
-        url = "http://example.com/HelloWorld/",   # project home page, if any
+        url = "https://example.com/HelloWorld/",   # project home page, if any
 
         # could also include long_description, download_url, classifiers, etc.
     )
@@ -849,7 +849,7 @@ argument, files specified by ``package_data`` will *not* be automatically
 added to the manifest unless they are tracked by a supported version control
 system, or are listed in the MANIFEST.in file.)
 
-__ http://docs.python.org/dist/node11.html
+__ https://docs.python.org/dist/node11.html
 
 Sometimes, the ``include_package_data`` or ``package_data`` options alone
 aren't sufficient to precisely define what files you want included.  For
@@ -1546,7 +1546,7 @@ If you use the ``register`` command (``setup.py register``) to register your
 package with PyPI, that's most of the battle right there.  (See the
 `docs for the register command`_ for more details.)
 
-.. _docs for the register command: http://docs.python.org/dist/package-index.html
+.. _docs for the register command: https://docs.python.org/dist/package-index.html
 
 If you also use the `upload`_ command to upload actual distributions of your
 package, that's even better, because EasyInstall will be able to find and
@@ -2406,7 +2406,7 @@ The ``upload`` command has a few options worth noting:
 
 ``--repository=URL, -r URL``
     The URL of the repository to upload to.  Defaults to
-    http://pypi.python.org/pypi (i.e., the main PyPI installation).
+    https://pypi.python.org/pypi (i.e., the main PyPI installation).
 
 .. _upload_docs:
 
@@ -2414,7 +2414,7 @@ The ``upload`` command has a few options worth noting:
 ======================================================
 
 PyPI now supports uploading project documentation to the dedicated URL
-http://packages.python.org/<project>/.
+https://packages.python.org/<project>/.
 
 The ``upload_docs`` command will create the necessary zip file out of a
 documentation directory and will post to the repository.
@@ -2446,7 +2446,7 @@ command::
 
 If no ``--upload-dir`` is given, ``upload_docs`` will attempt to run the
 ``build_sphinx`` command to generate uploadable documentation.
-For the command to become available, `Sphinx <http://sphinx.pocoo.org/>`_
+For the command to become available, `Sphinx <https://www.sphinx-doc.org/>`_
 must be installed in the same environment as distribute.
 
 As with other ``setuptools``-based commands, you can define useful
@@ -2468,7 +2468,7 @@ The ``upload_docs`` command has the following options:
 
 ``--repository=URL, -r URL``
     The URL of the repository to upload to.  Defaults to
-    http://pypi.python.org/pypi (i.e., the main PyPI installation).
+    https://pypi.python.org/pypi (i.e., the main PyPI installation).
 
 
 --------------------------------
@@ -3225,6 +3225,6 @@ setuptools, and the `setuptools bug tracker`_ ONLY for issues you have
 confirmed via the list are actual bugs, and which you have reduced to a minimal
 set of steps to reproduce.
 
-.. _distutils-sig mailing list: http://mail.python.org/pipermail/distutils-sig/
-.. _setuptools bug tracker: http://bugs.python.org/setuptools/
+.. _distutils-sig mailing list: https://mail.python.org/pipermail/distutils-sig/
+.. _setuptools bug tracker: https://bugs.python.org/setuptools/
 

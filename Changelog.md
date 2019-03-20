@@ -42,13 +42,13 @@ Bugfixes:
 
 Bugfixes:
 
-* Unset PYTHONHOME in buildpack for [user_env_compile](http://devcenter.heroku.com/articles/labs-user-env-compile).
+* Unset PYTHONHOME in buildpack for [user_env_compile](https://devcenter.heroku.com/articles/labs-user-env-compile).
 
 ## v8
 
 Features:
 
-* Disable Django collectstatic with `$DISABLE_COLLECTSTATIC` + [user_env_compile](http://devcenter.heroku.com/articles/labs-user-env-compile).
+* Disable Django collectstatic with `$DISABLE_COLLECTSTATIC` + [user_env_compile](https://devcenter.heroku.com/articles/labs-user-env-compile).
 
 Bugfixes:
 
@@ -73,9 +73,9 @@ Features:
 * Dist packages (setup.py) support.
 * Move new virtualenvs to `/app/.heroku/venv`.
 * Heavily improved Django app detection, accounting for `Django` in `requirements.txt`.
-* Literate [documentation](http://python-buildpack.herokuapp.com).
+* Literate [documentation](https://python-buildpack.herokuapp.com).
 * Default `$PYTHONHOME`, `$PYTHONPATH`, and `$LANG` configurations.
-* Disable Django setting injection with `$DISABLE_INJECTION` + [user_env_compile](http://devcenter.heroku.com/articles/labs-user-env-compile).
+* Disable Django setting injection with `$DISABLE_INJECTION` + [user_env_compile](https://devcenter.heroku.com/articles/labs-user-env-compile).
 * General code refactor and improved messaging.
 * Unit tests.
 

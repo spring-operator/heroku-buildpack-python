@@ -135,7 +135,7 @@ if _being_installed():
 
 # return contents of reStructureText file with linked issue references
 def _linkified(rst_path):
-    bitroot = 'http://bitbucket.org/tarek/distribute'
+    bitroot = 'https://bitbucket.org/tarek/distribute'
     revision = re.compile(r'\b(issue\s+#?\d+)\b', re.M | re.I)
 
     rst_file = open(rst_path)
@@ -166,7 +166,7 @@ dist = setup(
     license="PSF or ZPL",
     long_description = long_description,
     keywords = "CPAN PyPI distutils eggs package management",
-    url = "http://packages.python.org/distribute",
+    url = "https://packages.python.org/distribute",
     test_suite = 'setuptools.tests',
     src_root = src_root,
     packages = find_packages(),

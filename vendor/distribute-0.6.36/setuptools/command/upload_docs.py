@@ -185,7 +185,7 @@ class upload_docs(upload):
         elif r.status == 301:
             location = r.getheader('Location')
             if location is None:
-                location = 'http://packages.python.org/%s/' % meta.get_name()
+                location = 'https://packages.python.org/%s/' % meta.get_name()
             self.announce('Upload successful. Visit %s' % location,
                           log.INFO)
         else:

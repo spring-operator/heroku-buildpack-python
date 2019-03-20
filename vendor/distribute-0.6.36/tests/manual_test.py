@@ -51,9 +51,9 @@ eggs =
     extensions
 """
 
-BOOTSTRAP = 'http://python-distribute.org/bootstrap.py'
+BOOTSTRAP = 'https://python-distribute.org/bootstrap.py'
 PYVER = sys.version.split()[0][:3]
-DEV_URL = 'http://bitbucket.org/tarek/distribute/get/0.6-maintenance.zip#egg=distribute-dev'
+DEV_URL = 'https://bitbucket.org/tarek/distribute/get/0.6-maintenance.zip#egg=distribute-dev'
 
 _VARS = {'base': '.',
          'py_version_short': PYVER}

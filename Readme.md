@@ -1,9 +1,9 @@
 Heroku buildpack: Python
 ========================
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps, powered by [pip](http://www.pip-installer.org/).
+This is a [Heroku buildpack](https://devcenter.heroku.com/articles/buildpacks) for Python apps, powered by [pip](https://pip.pypa.io/).
 
-[![Build Status](https://secure.travis-ci.org/heroku/heroku-buildpack-python.png?branch=master)](http://travis-ci.org/heroku/heroku-buildpack-python)
+[![Build Status](https://secure.travis-ci.org/heroku/heroku-buildpack-python.png?branch=master)](https://travis-ci.org/heroku/heroku-buildpack-python)
 
 Usage
 -----

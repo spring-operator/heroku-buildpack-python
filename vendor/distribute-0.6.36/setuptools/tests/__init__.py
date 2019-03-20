@@ -118,12 +118,12 @@ class DependsTests(unittest.TestCase):
         self.assertTrue(not req.is_present())
         self.assertTrue(not req.is_current())
 
-        req = Require('Tests', None, 'tests', homepage="http://example.com")
+        req = Require('Tests', None, 'tests', homepage="https://example.com")
         self.assertEqual(req.format, None)
         self.assertEqual(req.attribute, None)
         self.assertEqual(req.requested_version, None)
         self.assertEqual(req.full_name(), 'Tests')
-        self.assertEqual(req.homepage, 'http://example.com')
+        self.assertEqual(req.homepage, 'https://example.com')
 
         paths = [os.path.dirname(p) for p in __path__]
         self.assertTrue(req.is_present(paths))

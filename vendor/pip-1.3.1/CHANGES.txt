@@ -136,7 +136,7 @@ Changelog
 * Fixed #436 - Only warn about version conflicts if there is actually one.
   This re-enables using ``==dev`` in requirements files.
 
-* Moved tests to be run on Travis CI: http://travis-ci.org/pypa/pip
+* Moved tests to be run on Travis CI: https://travis-ci.org/pypa/pip
 
 * Added a better help formatter.
 
@@ -246,7 +246,7 @@ Changelog
 
   .. note::
 
-      Make sure you have `distribute <http://pypi.python.org/pypi/distribute>`_
+      Make sure you have `distribute <https://pypi.python.org/pypi/distribute>`_
       installed before using the installer!
 
 0.8.3
@@ -295,8 +295,8 @@ Changelog
 * Added global --user flag as shortcut for --install-option="--user". From
   Ronny Pfannschmidt.
 
-* Added support for `PyPI mirrors <http://pypi.python.org/mirrors>`_ as
-  defined in `PEP 381 <http://www.python.org/dev/peps/pep-0381/>`_, from
+* Added support for `PyPI mirrors <https://pypi.python.org/mirrors>`_ as
+  defined in `PEP 381 <https://www.python.org/dev/peps/pep-0381/>`_, from
   Jannis Leidel.
 
 * Fixed issue #138 - Git revisions ignored. Thanks John-Scott Atlakson.
@@ -521,7 +521,7 @@ Changelog
   slash-sensitive).
 
 * Improvements on Windows (from `Ionel Maries Cristian
-  <http://ionelmc.wordpress.com/>`_).
+  <https://ionelmc.wordpress.com/>`_).
 
 * Fixed problem with not being able to install private git repositories.
 

@@ -153,7 +153,7 @@ class URLOpener(object):
     def get_request(self, url):
         """
         Wraps the URL to retrieve to protects against "creative"
-        interpretation of the RFC: http://bugs.python.org/issue8732
+        interpretation of the RFC: https://bugs.python.org/issue8732
         """
         if isinstance(url, string_types):
             url = urllib2.Request(url, headers={'Accept-encoding': 'identity'})
@@ -340,7 +340,7 @@ def geturl(urllib2_resp):
     always restores '://' if it is missing, and it appears some url
     schemata aren't always followed by '//' after the colon, but as
     far as I know pip doesn't need any of those.
-    The URI RFC can be found at: http://tools.ietf.org/html/rfc1630
+    The URI RFC can be found at: https://tools.ietf.org/html/rfc1630
 
     This function assumes that
         scheme:/foo/bar

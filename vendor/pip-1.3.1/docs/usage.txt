@@ -104,18 +104,18 @@ Examples
   ::
 
   $ pip install ./downloads/SomePackage-1.0.4.tar.gz
-  $ pip install http://my.package.repo/SomePackage-1.0.4.zip
+  $ pip install https://my.package.repo/SomePackage-1.0.4.zip
 
 
 8) Install from alternative package repositories.
 
   Install from a different index, and not `PyPI`_::
 
-  $ pip install --index-url http://my.package.repo/simple/ SomePackage
+  $ pip install --index-url https://my.package.repo/simple/ SomePackage
 
   Search an additional index during install, in addition to `PyPI`_::
 
-  $ pip install --extra-index-url http://my.package.repo/simple SomePackage
+  $ pip install --extra-index-url https://my.package.repo/simple SomePackage
 
   Install from a local flat directory containing archives (and don't scan indexes)::
 
@@ -124,8 +124,8 @@ Examples
   $ pip install --no-index --find-links:relative/dir/ SomePackage
 
 
-.. _PyPI: http://pypi.python.org/pypi
-.. _setuptools extras: http://packages.python.org/distribute/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies
+.. _PyPI: https://pypi.python.org/pypi
+.. _setuptools extras: https://packages.python.org/distribute/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies
 
 
 pip uninstall

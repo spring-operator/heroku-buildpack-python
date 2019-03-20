@@ -26,7 +26,7 @@ DATABASES = {
 ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
-# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
+# https://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'America/Chicago'
@@ -54,7 +54,7 @@ MEDIA_ROOT = ''
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
-# Examples: "http://example.com/media/", "http://media.example.com/"
+# Examples: "https://example.com/media/", "https://media.example.com/"
 MEDIA_URL = ''
 
 # Absolute path to the directory static files should be collected to.
@@ -64,7 +64,7 @@ MEDIA_URL = ''
 STATIC_ROOT = ''
 
 # URL prefix for static files.
-# Example: "http://example.com/static/", "http://static.example.com/"
+# Example: "https://example.com/static/", "https://static.example.com/"
 STATIC_URL = '/static/'
 
 # Additional locations of static files
@@ -129,7 +129,7 @@ INSTALLED_APPS = (
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
-# See http://docs.djangoproject.com/en/dev/topics/logging for
+# See https://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
 LOGGING = {
     'version': 1,

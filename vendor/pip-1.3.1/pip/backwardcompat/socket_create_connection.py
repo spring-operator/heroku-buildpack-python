@@ -1,5 +1,5 @@
 """
-patch for py25 socket to work with http://pypi.python.org/pypi/ssl/
+patch for py25 socket to work with https://pypi.python.org/pypi/ssl/
 copy-paste from py2.6 stdlib socket.py
 https://gist.github.com/zed/1347055
 """

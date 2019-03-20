@@ -34,7 +34,7 @@ For example, to specify :ref:`--no-index <--no-index>` and 2 :ref:`--find-links 
 
 --no-index
 --find-links /my/local/archives
---find-links http://some.archives.com/archives
+--find-links https://some.archives.com/archives
 
 
 Lastly, if you wish, you can refer to other requirements files, like this::
@@ -47,7 +47,7 @@ Requirement Specifiers
 ======================
 
 pip supports installing from "requirement specifiers" as implemented in
-`pkg_resources Requirements <http://packages.python.org/distribute/pkg_resources.html#requirement-objects>`_
+`pkg_resources Requirements <https://packages.python.org/distribute/pkg_resources.html#requirement-objects>`_
 
 Some Examples::
 
@@ -80,7 +80,7 @@ Git
 pip currently supports cloning over ``git``, ``git+http`` and ``git+ssh``::
 
     git+git://git.myproject.org/MyProject#egg=MyProject
-    git+http://git.myproject.org/MyProject#egg=MyProject
+    git+https://git.myproject.org/MyProject#egg=MyProject
     git+ssh://git.myproject.org/MyProject#egg=MyProject
 
 Passing branch names, a commit hash or a tag name is also possible::
@@ -95,17 +95,17 @@ Mercurial
 The supported schemes are: ``hg+http``, ``hg+https``,
 ``hg+static-http`` and ``hg+ssh``::
 
-    hg+http://hg.myproject.org/MyProject#egg=MyProject
+    hg+https://hg.myproject.org/MyProject#egg=MyProject
     hg+https://hg.myproject.org/MyProject#egg=MyProject
     hg+ssh://hg.myproject.org/MyProject#egg=MyProject
 
 You can also specify a revision number, a revision hash, a tag name or a local
 branch name::
 
-    hg+http://hg.myproject.org/MyProject@da39a3ee5e6b#egg=MyProject
-    hg+http://hg.myproject.org/MyProject@2019#egg=MyProject
-    hg+http://hg.myproject.org/MyProject@v1.0#egg=MyProject
-    hg+http://hg.myproject.org/MyProject@special_feature#egg=MyProject
+    hg+https://hg.myproject.org/MyProject@da39a3ee5e6b#egg=MyProject
+    hg+https://hg.myproject.org/MyProject@2019#egg=MyProject
+    hg+https://hg.myproject.org/MyProject@v1.0#egg=MyProject
+    hg+https://hg.myproject.org/MyProject@special_feature#egg=MyProject
 
 Subversion
 ~~~~~~~~~~
@@ -114,7 +114,7 @@ pip supports the URL schemes ``svn``, ``svn+svn``, ``svn+http``, ``svn+https``, 
 You can also give specific revisions to an SVN URL, like::
 
     svn+svn://svn.myproject.org/svn/MyProject#egg=MyProject
-    svn+http://svn.myproject.org/svn/MyProject/trunk@2019#egg=MyProject
+    svn+https://svn.myproject.org/svn/MyProject/trunk@2019#egg=MyProject
 
 which will check out revision 2019.  ``@{20080101}`` would also check
 out the revision from 2008-01-01. You can only check out specific
@@ -126,7 +126,7 @@ Bazaar
 pip supports Bazaar using the ``bzr+http``, ``bzr+https``, ``bzr+ssh``,
 ``bzr+sftp``, ``bzr+ftp`` and ``bzr+lp`` schemes::
 
-    bzr+http://bzr.myproject.org/MyProject/trunk#egg=MyProject
+    bzr+https://bzr.myproject.org/MyProject/trunk#egg=MyProject
     bzr+sftp://user@myproject.org/MyProject/trunk#egg=MyProject
     bzr+ssh://user@myproject.org/MyProject/trunk#egg=MyProject
     bzr+ftp://user@myproject.org/MyProject/trunk#egg=MyProject
@@ -135,16 +135,16 @@ pip supports Bazaar using the ``bzr+http``, ``bzr+https``, ``bzr+ssh``,
 Tags or revisions can be installed like this::
 
     bzr+https://bzr.myproject.org/MyProject/trunk@2019#egg=MyProject
-    bzr+http://bzr.myproject.org/MyProject/trunk@v1.0#egg=MyProject
+    bzr+https://bzr.myproject.org/MyProject/trunk@v1.0#egg=MyProject
 
 
 Finding Packages
 ================
 
-pip searches for packages on `PyPI <http://pypi.python.org>`_ using the
-`http simple interface <http://pypi.python.org/simple>`_,
-which is documented `here <http://packages.python.org/distribute/easy_install.html#package-index-api>`_
-and `there <http://www.python.org/dev/peps/pep-0301/>`_
+pip searches for packages on `PyPI <https://pypi.python.org>`_ using the
+`http simple interface <https://pypi.python.org/simple>`_,
+which is documented `here <https://packages.python.org/distribute/easy_install.html#package-index-api>`_
+and `there <https://www.python.org/dev/peps/pep-0301/>`_
 
 pip offers a set of :ref:`Package Index Options <Package Index Options>` for modifying how packages are found.
 
@@ -177,7 +177,7 @@ Installing the SSL Backport
 .. warning::
 
     We advise against using ``pip`` itself to install the ssl backport, because it won't be secure
-    until *after* installing ssl.  Likewise, `easy_install <http://pythonhosted.org/distribute/easy_install.html>`_ is not advised, because it
+    until *after* installing ssl.  Likewise, `easy_install <https://pythonhosted.org/distribute/easy_install.html>`_ is not advised, because it
     does not currently support ssl.
 
 
@@ -239,12 +239,12 @@ See the :ref:`Configuration` section.
 "Editable" Installs
 ===================
 
-"Editable" installs are fundamentally `"setuptools develop mode" <http://packages.python.org/distribute/setuptools.html#development-mode>`_ installs.
+"Editable" installs are fundamentally `"setuptools develop mode" <https://packages.python.org/distribute/setuptools.html#development-mode>`_ installs.
 
 You can install local projects or VCS projects in "editable" mode::
 
 $ pip install -e path/to/SomeProject
-$ pip install -e git+http://repo/my_project.git#egg=SomeProject
+$ pip install -e git+https://repo/my_project.git#egg=SomeProject
 
 For local projects, the "SomeProject.egg-info" directory is created relative to the project path.
 This is one advantage over just using ``setup.py develop``, which creates the "egg-info" directly relative the current working directory.
@@ -264,5 +264,5 @@ Here are some examples of how pip uses `setuptools` and `pkg_resources`:
 * pip uses `pkg_resources` for version parsing, for detecting version conflicts, and to determine what projects are installed,
 
 
-.. _Setuptools: http://pypi.python.org/pypi/setuptools/0.6c11
-.. _Distribute: http://pypi.python.org/pypi/distribute/
+.. _Setuptools: https://pypi.python.org/pypi/setuptools/0.6c11
+.. _Distribute: https://pypi.python.org/pypi/distribute/

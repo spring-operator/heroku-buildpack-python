@@ -8,7 +8,7 @@ packages.
 
 Please share your experiences with us! If you encounter difficulty installing
 a package, please contact us via the `distutils mailing list
-<http://mail.python.org/pipermail/distutils-sig/>`_.  (Note: please DO NOT send
+<https://mail.python.org/pipermail/distutils-sig/>`_.  (Note: please DO NOT send
 private email directly to the author of setuptools; it will be discarded.  The
 mailing list is a searchable archive of previously-asked and answered
 questions; you should begin your research there before reporting something as a
@@ -31,7 +31,7 @@ Using "Easy Install"
 Installing "Easy Install"
 -------------------------
 
-Please see the `setuptools PyPI page <http://pypi.python.org/pypi/setuptools>`_
+Please see the `setuptools PyPI page <https://pypi.python.org/pypi/setuptools>`_
 for download links and basic installation instructions for each of the
 supported platforms.
 
@@ -48,7 +48,7 @@ Locations`_ before installing.  (And, on Windows, you should not use the
 Note that ``easy_install`` normally works by downloading files from the
 internet.  If you are behind an NTLM-based firewall that prevents Python
 programs from accessing the net directly, you may wish to first install and use
-the `APS proxy server <http://ntlmaps.sf.net/>`_, which lets you get past such
+the `APS proxy server <http://ntlmaps.sourceforge.net/>`_, which lets you get past such
 firewalls in the same way that your web browser(s) do.
 
 (Alternately, if you do not wish easy_install to actually download anything, you
@@ -114,12 +114,12 @@ version, and automatically downloading, building, and installing it::
 **Example 2**. Install or upgrade a package by name and version by finding
 links on a given "download page"::
 
-    easy_install -f http://pythonpaste.org/package_index.html SQLObject
+    easy_install -f https://web.archive.org/web/http%3A//pythonpaste.org/package_index.html SQLObject
 
 **Example 3**. Download a source distribution from a specified URL,
 automatically building and installing it::
 
-    easy_install http://example.com/path/to/MyPackage-1.2.3.tgz
+    easy_install https://example.com/path/to/MyPackage-1.2.3.tgz
 
 **Example 4**. Install an already-downloaded .egg file::
 
@@ -194,9 +194,9 @@ using the upgrade flag, to find the latest available version on PyPI::
 
 or by using a download page, direct download URL, or package filename::
 
-    easy_install -f http://example.com/downloads ExamplePackage
+    easy_install -f https://example.com/downloads ExamplePackage
 
-    easy_install http://example.com/downloads/ExamplePackage-2.0-py2.4.egg
+    easy_install https://example.com/downloads/ExamplePackage-2.0-py2.4.egg
 
     easy_install my_downloads/ExamplePackage-2.0.tgz
 
@@ -289,7 +289,7 @@ matching version of the package the script came from, so renaming the script
 has no effect on what it executes.
 
 For example, suppose you want to use two versions of the ``rst2html`` tool
-provided by the `docutils <http://docutils.sf.net/>`_ package.  You might
+provided by the `docutils <http://docutils.sourceforge.net/>`_ package.  You might
 first install one version::
 
     easy_install -m docutils==0.3.9
@@ -396,12 +396,12 @@ If someone distributes a package in the form of a single ``.py`` file, you can
 wrap it in an egg by tacking an ``#egg=name-version`` suffix on the file's URL.
 So, something like this::
 
-    easy_install -f "http://some.example.com/downloads/foo.py#egg=foo-1.0" foo
+    easy_install -f "https://some.example.com/downloads/foo.py#egg=foo-1.0" foo
 
 will install the package as an egg, and this::
 
     easy_install -zmaxd. \
-        -f "http://some.example.com/downloads/foo.py#egg=foo-1.0" foo
+        -f "https://some.example.com/downloads/foo.py#egg=foo-1.0" foo
 
 will create a ``.egg`` file in the current directory.
 
@@ -422,8 +422,8 @@ something like this to their `configuration files`_:
 .. code-block:: ini
 
     [easy_install]
-    find_links = http://mypackages.example.com/somedir/
-                 http://turbogears.org/download/
+    find_links = https://mypackages.example.com/somedir/
+                 http://www.turbogears.org/download/
                  http://peak.telecommunity.com/dist/
 
 As you can see, you can list multiple URLs separated by whitespace, continuing
@@ -440,7 +440,7 @@ Password-Protected Sites
 If a site you want to download from is password-protected using HTTP "Basic"
 authentication, you can specify your credentials in the URL, like so::
 
-    http://some_userid:some_password@some.example.com/some_path/
+    https://some_userid:some_password@some.example.com/some_path/
 
 You can do this with both index page URLs and direct download URLs.  As long
 as any HTML pages read by easy_install use *relative* links to point to the
@@ -630,7 +630,7 @@ locations, build options, etc., EasyInstall will respect your existing settings
 until and unless you override them explicitly in an ``[easy_install]`` section.
 
 For more information, see also the current Python documentation on the `use and
-location of distutils configuration files <http://docs.python.org/inst/config-syntax.html>`_.
+location of distutils configuration files <https://docs.python.org/inst/config-syntax.html>`_.
 
 Notice that ``easy_install`` will use the ``setup.cfg`` from the current
 working directory only if it was triggered from ``setup.py`` through the
@@ -804,7 +804,7 @@ Command-Line Options
 
 ``--index-url=URL, -i URL`` (New in 0.4a1; default changed in 0.6c7)
     Specifies the base URL of the Python Package Index.  The default is
-    http://pypi.python.org/simple if not specified.  When a package is requested
+    https://pypi.python.org/simple if not specified.  When a package is requested
     that is not locally available or linked from a ``--find-links`` download
     page, the package index will be searched for download pages for the needed
     package, and those download pages will be searched for links to download
@@ -886,7 +886,7 @@ Command-Line Options
     packages listed and downloadable from machines in the ``python.org``
     domain.  The glob patterns must match the *entire* user/host/port section of
     the target URL(s).  For example, ``*.python.org`` will NOT accept a URL
-    like ``http://python.org/foo`` or ``http://www.python.org:8080/``.
+    like ``https://python.org/foo`` or ``https://www.python.org:8080/``.
     Multiple patterns can be specified by separting them with commas.  The
     default pattern is ``*``, which matches anything.
 
@@ -961,7 +961,7 @@ The following section lists only the easiest and most relevant approaches [1]_.
 
 .. [1] There are older ways to achieve custom installation using various ``easy_install`` and ``setup.py install`` options, combined with ``PYTHONPATH`` and/or ``PYTHONUSERBASE`` alterations, but all of these are effectively deprecated by the User scheme brought in by `PEP-370`_ in Python 2.6.
 
-.. _PEP-370: http://www.python.org/dev/peps/pep-0370/
+.. _PEP-370: https://www.python.org/dev/peps/pep-0370/
 
 
 Use the "--user" option
@@ -993,7 +993,7 @@ that the User installation scheme alone does not provide, e.g. the ability to hi
 
 Please refer to the `virtualenv`_ documentation for more details.
 
-.. _virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _virtualenv: https://pypi.python.org/pypi/virtualenv
 
 
 
@@ -1126,7 +1126,7 @@ History
 0.6c7
  * ``ftp:`` download URLs now work correctly.
 
- * The default ``--index-url`` is now ``http://pypi.python.org/simple``, to use
+ * The default ``--index-url`` is now ``https://pypi.python.org/simple``, to use
    the Python Package Index's new simpler (and faster!) REST API.
 
 0.6c6
@@ -1147,7 +1147,7 @@ History
    is installed unzipped.
 
 0.6c4
- * Added support for HTTP "Basic" authentication using ``http://user:pass@host``
+ * Added support for HTTP "Basic" authentication using ``https://user:pass@host``
    URLs.  If a password-protected page contains links to the same host (and
    protocol), those links will inherit the credentials used to access the
    original page.

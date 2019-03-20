@@ -6,7 +6,7 @@ virtualenv
 ----------
 
 pip is most nutritious when used with `virtualenv
-<http://pypi.python.org/pypi/virtualenv>`__.  One of the reasons pip
+<https://pypi.python.org/pypi/virtualenv>`__.  One of the reasons pip
 doesn't install "multi-version" eggs is that virtualenv removes much of the need
 for it.  Because pip is installed by virtualenv, just use
 ``path/to/my/environment/bin/pip`` to install things into that
@@ -21,7 +21,7 @@ and to bail if not, use::
 easy_install
 ------------
 
-pip was originally written to improve on `easy_install <http://pythonhosted.org/distribute/easy_install.html>`_ in the following ways:
+pip was originally written to improve on `easy_install <https://pythonhosted.org/distribute/easy_install.html>`_ in the following ways:
 
 * All packages are downloaded before installation.  Partially-completed
   installation doesn't occur as a result.
@@ -60,7 +60,7 @@ buildout
 --------
 
 If you are using `zc.buildout
-<http://pypi.python.org/pypi/zc.buildout>`_ you should look at
-`gp.recipe.pip <http://pypi.python.org/pypi/gp.recipe.pip>`_ as an
+<https://pypi.python.org/pypi/zc.buildout>`_ you should look at
+`gp.recipe.pip <https://pypi.python.org/pypi/gp.recipe.pip>`_ as an
 option to use pip and virtualenv in your buildouts.
 
